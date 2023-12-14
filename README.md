@@ -1,22 +1,28 @@
-<<<<<<< HEAD
-## Getting Started
+O projeto desenvolvido é uma implementação do clássico jogo Campo Minado em Java, utilizando conceitos de Programação Orientada a Objetos (POO) e interface gráfica com o pacote javax.swing.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Visão Geral do Projeto:
 
-## Folder Structure
+Página Inicial:
 
-The workspace contains two folders by default, where:
+*Tela inicial do jogo com o nome "Campo Minado" e instruções de como jogar.
+*Opção para escolher o nível de dificuldade (Fácil, Médio, Difícil).
+*Botão "Começar Jogo" para iniciar o jogo com a dificuldade escolhida.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Campo Minado:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+*O jogo é representado por um campo de botões, onde cada botão corresponde a uma célula.
+*O jogador pode clicar nos botões para revelar as células do campo.
+*O objetivo é evitar clicar em bombas e revelar todas as células seguras.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Funcionalidades Implementadas:
 
-## Dependency Management
+*Geração aleatória de bombas no início do jogo.
+*Contagem de bombas vizinhas para cada célula.
+*Revelação automática de células sem bombas vizinhas.
+*Interface gráfica usando imagens para representar bombas, células vazias e números de bombas vizinhas.
+*Botões de controle na parte inferior para voltar à página inicial, escolher o modo ou reiniciar a fase.
+*Página inicial em tela cheia, com opção para escolher o nível de dificuldade.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-=======
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/qy7zOskF)
->>>>>>> adef6daefe81b2ae8cc80eae9b33e6661db2e67c
+Persistência de Dados:
+
+*Não foi implementada uma persistência de dados robusta nesse projeto. Entretanto, a estrutura permite fácil extensão para salvar e carregar o estado do jogo em arquivos.
